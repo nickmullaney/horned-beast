@@ -7,6 +7,7 @@ class Main extends React.Component {
   render() {
     console.log("Data" + data);
     return (
+      //This iterates over the JSON data file
       data.map((beast) => (
         <>
         {/* <li key = {beast._id}> {_id}</li> */}
