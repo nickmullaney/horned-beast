@@ -5,7 +5,7 @@ class Header extends React.Component{
     return(
       <header>
         <h2>{this.props.title}</h2>
-        <img src = {this.props.imageUrl} alt = {'Horned Beast'}/>
+        <img src = {this.props.imageUrl} alt = {this.props.keyword}/>
         <p>{this.props.description}</p>
         </header>
     );

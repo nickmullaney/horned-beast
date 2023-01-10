@@ -10,9 +10,7 @@ class Main extends React.Component {
       //This iterates over the JSON data file
       data.map((beast) => (
         <>
-        {/* <li key = {beast._id}> {_id}</li> */}
-
-          <HornedBeast imageUrl={beast.image_url} title={beast.title} description={beast.description} />
+          <HornedBeast imageUrl={beast.image_url} title={beast.title} description={beast.description} alt={beast.keyword} />
         </>
       ))
     )
