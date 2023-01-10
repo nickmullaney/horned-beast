@@ -9,9 +9,10 @@ class Main extends React.Component {
     return (
       //This iterates over the JSON data file
       data.map((beast) => (
-        <>
+        <React.Fragment key ={beast._id}>
           <HornedBeast imageUrl={beast.image_url} title={beast.title} description={beast.description} alt={beast.keyword} />
-        </>
+        
+        </React.Fragment>
       ))
     )
   }
