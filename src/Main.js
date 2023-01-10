@@ -11,6 +11,8 @@ class Main extends React.Component {
       data.map((beast) => (
         <React.Fragment key ={beast._id}>
           <HornedBeast imageUrl={beast.image_url} title={beast.title} description={beast.description} alt={beast.keyword} />
+          {/* This needs to match the JSON Data */}
+          {/* <HornedBeast {...beast} /> */}
         
         </React.Fragment>
       ))
