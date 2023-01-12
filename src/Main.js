@@ -7,8 +7,9 @@ class Main extends React.Component {
   render() {
     console.log("Data" + data);
     return (
-      //This iterates over the JSON data file
-      data.map((beast, idx) => (
+      <main>
+      {/* This iterates over the JSON data file */}
+      {data.map((beast, idx) => (
         <React.Fragment key={beast._id}>
           {/* <HornedBeast image_url={beast.image_url} title={beast.title} description={beast.description} alt={beast.keyword}
             idx={idx}
@@ -17,7 +18,8 @@ class Main extends React.Component {
           <HornedBeast {...beast} />
 
         </React.Fragment>
-      ))
+      ))}
+        </main>
     )
   }
 }

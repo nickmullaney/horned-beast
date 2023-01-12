@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+header{
+  text-align: center;
+	background: linear-gradient(45deg, rgb(67, 67, 151) 35%, rgba(0,212,255,1) 100%);
+  color: #61dafb;
+  text-shadow: 2px 1px 0px rgb(154, 95, 231), 9px 8px 0px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  box-shadow: 5px 4px 3px black;
+  border-radius: 5px;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+.beast{
+padding: 1rem;
+}
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
