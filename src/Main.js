@@ -24,7 +24,7 @@ class Main extends React.Component {
             {/* This needs to match the JSON Data */}
             <HornedBeast {...beast}
               handleShowModal={this.props.handleShowModal}
-              handleCloseModal ={this.props.handleCloseModal} />
+              handleCloseModal={this.props.handleCloseModal} />
           </React.Fragment>
         ))}
       </main>

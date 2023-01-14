@@ -36,10 +36,10 @@ class App extends React.Component {
         <body>
           <Header />
           <Main
-          handleShowModal ={this.handleShowModal}
-          handleCloseModal ={this.handleCloseModal}/>
+          handleShowModal ={this.handleShowModal}/>
           <Footer />
           <SelectedBeasts
+          description ={this.state.description}
           title ={this.state.title}
           image_url = {this.state.image_url} 
           showModal = {this.state.showModal}
