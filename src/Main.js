@@ -5,7 +5,7 @@ import data from "./data.json";
 // All code thanks to the team at project table 3. Anthony, Danner, Hannah, Jeremy, Matt, Nick
 class Main extends React.Component {
   render() {
-    console.log("ShowModalFunction" + this.props.handleShowModal);
+    // console.log("ShowModalFunction" + this.props.handleShowModal);
     return (
       <main>
         {/* This iterates over the JSON data file */}

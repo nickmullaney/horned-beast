@@ -30,7 +30,8 @@ class Beasts extends React.Component {
   fillAndShowModal = () => {
     this.props.handleShowModal(
       this.props.title,
-      this.props.image_url
+      this.props.image_url,
+      this.props.description
     );
   }
 

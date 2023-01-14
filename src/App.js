@@ -11,16 +11,18 @@ class App extends React.Component {
     this.state = {
       showModal: false,
       title: "",
-      image_url: ""
+      image_url: "",
+      description: ""
     }
   }
 
-  handleShowModal = (title, image_url) => {
-    console.log("showModal")
+  handleShowModal = (title, image_url, description) => {
+    // console.log("showModal")
     this.setState({
       showModal: true,
       title: title,
-      image_url: image_url
+      image_url: image_url,
+      description: description
     })
   }
 
