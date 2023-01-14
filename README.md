@@ -89,4 +89,14 @@ Number and Name of Feature Horned: Bootstrap
 Estimated Time To Complete: 2 Hours
 Start Time :
 Finish Time
-Actual Time Needed to Complete:
+Actual Time Needed to Complete: 1 hour
+
+## Lab 3
+
+### Feature 1
+Number and Name of Feature Horned: Display a Modal
+Estimated Time To Complete: 2 Hours
+Start Time: 1:00 PM
+Finish Time: 3:24 PM
+Actual Time Needed to Complete: 2.4 hours
+
