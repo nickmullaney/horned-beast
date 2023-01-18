@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Modal from "react-bootstrap/Modal";
 
-
+// This section here is for when a specific image is selected to bring it out as a popu
 export default class SelectedBeasts extends Component {
   render() {
     return (
@@ -17,7 +17,7 @@ export default class SelectedBeasts extends Component {
             <img src={this.props.image_url}
               alt={this.props.keyword}
               height={500}
-              width={450}>
+              width={470}>
             </img>
           </Modal.Body>
         </Modal>
