@@ -28,6 +28,7 @@ class Beasts extends React.Component {
   }
 
   fillAndShowModal = () => {
+    // This populates our Modal with the correct pieces
     this.props.handleShowModal(
       this.props.title,
       this.props.image_url,
@@ -37,6 +38,7 @@ class Beasts extends React.Component {
 
   render() {
     return (
+      //This builds our Beast Cards with the correct information
       <div className="beast">
         <Card bg="secondary" text="light" border="primary" style={{ width: '18rem' }}>
           <Card.Body>

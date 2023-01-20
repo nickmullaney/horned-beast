@@ -1,9 +1,7 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
 
-
-
-// All code thanks to the team at project table 3. Anthony, Danner, Hannah, Jeremy, Matt, Nick
+// Code Assist thanks to the team at project table 3. Anthony, Danner, Hannah, Jeremy, Matt, Nick
 class Main extends React.Component {
   render() {
     // console.log("ShowModalFunction" + this.props.handleShowModal);
@@ -24,6 +22,7 @@ class Main extends React.Component {
             /> */}
             {/* This is the fast way to do this */}
             {/* This needs to match the JSON Data */}
+            {/* This feeds down into HornedBeast */}
             <HornedBeast {...beast}
               handleShowModal={this.props.handleShowModal}
               handleCloseModal={this.props.handleCloseModal} />

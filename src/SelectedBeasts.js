@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import Modal from "react-bootstrap/Modal";
 
-// This section here is for when a specific image is selected to bring it out as a popu
+// This section here is for when a specific image is selected to bring it out as a popup
 export default class SelectedBeasts extends Component {
   render() {
     return (
       <>
+      {/* This populates our Modal with Props that are fed from State */}
         <Modal
           show={this.props.showModal}
           onHide={this.props.handleCloseModal}>

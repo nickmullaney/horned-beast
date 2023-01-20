@@ -1,3 +1,5 @@
+// This is the main piece of everything. This is the top file
+
 import React from "react";
 import Main from "./Main";
 import Header from "./Header";
@@ -8,6 +10,7 @@ import { Form } from "react-bootstrap";
 import data from "./data.json"
 
 class App extends React.Component {
+  // All constructors for the functions
   constructor(props) {
     super(props);
     this.state = {
@@ -19,6 +22,7 @@ class App extends React.Component {
     }
   }
 
+// This is the function that handles the display of the Modal
   handleShowModal = (title, image_url, description) => {
     // console.log("showModal")
     this.setState({
@@ -29,6 +33,7 @@ class App extends React.Component {
     })
   }
 
+  // Closes the Modal by setting to false
   handleCloseModal = () => {
     this.setState({
       showModal: false
@@ -41,10 +46,10 @@ class App extends React.Component {
     e.preventDefault();
     //setting new value for event target
     const horns = e.target.value;
-    
+
     parseInt(horns);
-    console.log("ParseInt Horns " + horns);  
-  
+    console.log("ParseInt Horns " + horns);
+
     //initializing new variable
     let updatedHorns;
 
@@ -92,6 +97,7 @@ class App extends React.Component {
       <>
         <body>
           <Form>
+            {/* Builds the dropdown selector for number of horns */}
             <Form.Group>
               <Form.Select onChange={this.updateHornData}>
                 <option value={""}>All Horns</option>
@@ -105,10 +111,12 @@ class App extends React.Component {
 
           <Header />
           <Main
+          // Here is our hornData as a state and feeds down into Main
             data={this.state.hornData}
             handleShowModal={this.handleShowModal} />
           <Footer />
           <SelectedBeasts
+          // This feeds down into SelectedBeasts
             description={this.state.description}
             title={this.state.title}
             image_url={this.state.image_url}
