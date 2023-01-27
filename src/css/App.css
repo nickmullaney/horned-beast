@@ -66,5 +66,5 @@ body{
 }
 
 .card-body{
-  max-height: min-content;
+  max-height: min-content; 
 }
